@@ -1,0 +1,47 @@
+.event-list-container {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  }
+  
+  .event-list {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1; /* Add flex property to make it flexible */
+  }
+  
+  .selected-events-container {
+    padding: 20px;
+    max-width: 300px; /* Adjust width as needed */
+    margin: 20px auto;
+    background: #ffffff;
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .event-list {
+      padding: 15px;
+      margin: 20px 10px;
+      h1 {
+        font-size: 20px;
+      }
+    }
+    .selected-events-container {
+      max-width: 100%; /* Take full width on smaller screens */
+      margin: 20px 10px;
+    }
+  }
+  

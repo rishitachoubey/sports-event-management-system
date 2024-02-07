@@ -1,0 +1,12 @@
+/* SelectedEvents.scss */
+@import './EventList.scss';
+
+.selected-events {
+  @extend .event-list;
+  /* Add additional styles specific to SelectedEvents if needed */
+}
+
+.selected-event {
+  @extend .event-item !optional;
+  /* Add additional styles specific to selected event items if needed */
+}
